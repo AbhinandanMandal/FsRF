@@ -1,8 +1,8 @@
-# FsRF: Two-Stage Stylized Neural Radiance Fields
+# Feature-Space 3D Style Transfer with Coordinate-Based Neural Radiance Fields
 
 > **Research code and engineering reference implementation**
 
-This repository implements a two-stage neural rendering pipeline for
+This repository implements a two-stage neural rendering pipeline *"Feature-Space 3D Style Transfer with Coordinate-Based Neural Radiance Fields"* (FeRS) for
 zero-shot-style transfer over a NeRF-style scene representation. It combines
 explicit camera-conditioned volume rendering with learned feature-space
 stylization: Stage 1 reconstructs a scene as a continuous 3D feature field,
