@@ -108,9 +108,7 @@ The repository follows the high-level research direction of StyleRF-style
 zero-shot 3D stylization: preserve a learned scene representation while
 transferring appearance in feature space. The code here is an independent
 implementation with its own module boundaries, training objectives,
-hyperparameters, checkpoints, and experimental outputs. Claims about
-architecture or performance should therefore be made only after checking the
-implementation and the final paper's exact definitions.
+hyperparameters, checkpoints, and experimental outputs.
 
 ## Requirements
 
