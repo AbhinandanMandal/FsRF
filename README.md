@@ -2,7 +2,28 @@
 
 > **Research code and engineering reference implementation**
 
-This repository implements a two-stage neural rendering pipeline *"Feature-Space 3D Style Transfer with Coordinate-Based Neural Radiance Fields"* (FsRS) for
+**Project page | Paper**
+
+This repository contains the research code for *Feature-Space 3D Style
+Transfer with Coordinate-Based Neural Radiance Fields* (FsRF), a two-stage
+NeRF-based method for transferring reference styles to novel views while
+preserving scene geometry and content.
+
+<p align="center">
+  <img src="outputs/gallery/comparision_01.png" alt="FsRF comparison on a chair scene" width="49%">
+  <img src="outputs/gallery/comparisions_02.png" alt="FsRF comparison on a flower scene" width="49%">
+  <br>
+  <img src="outputs/gallery/comparisions_03.png" alt="FsRF style interpolation results" width="49%">
+  <img src="outputs/gallery/comparisions_04.png" alt="FsRF comparison on a Lego excavator scene" width="49%">
+</p>
+
+<p align="center">
+  <em>Qualitative results showing content scenes, reference styles, stylized
+  novel views, baseline comparisons, and depth maps. The results demonstrate
+  geometry-aware stylization across multiple scenes and style configurations.</em>
+</p>
+
+This repository implements a two-stage neural rendering pipeline *"Feature-Space 3D Style Transfer with Coordinate-Based Neural Radiance Fields"* (FsRF) for
 zero-shot-style transfer over a NeRF-style scene representation. It combines
 explicit camera-conditioned volume rendering with learned feature-space
 stylization: Stage 1 reconstructs a scene as a continuous 3D feature field,
@@ -76,7 +97,7 @@ without relearning the Stage 1 radiance/feature field.
 | Environment specification | No — install the packages listed below |
 | Stage 2 YAML configuration | Empty — use `src/stage_02_config.py` or the checkpoint-embedded config |
 
-## Qualitative results
+## Detailed qualitative results
 
 The following comparisons summarize the checked-in qualitative results. Each
 row is a fixed-size triptych:
